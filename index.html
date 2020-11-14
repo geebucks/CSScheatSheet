@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <head>
+            <h1>HTML Cheat Sheet</h1>
+        </head>
+        <section>
+            <h2>CSS Selectors and Specificity</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Selector</th>
+                        <th>Description</th>
+                        <th>Comparative Priority</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="code">h1</td>
+                        <td>Selects all <span class="code">h1</span> html elements</td>
+                        <td>This would overwrite <span class="code">*</span> (or all) and <span class="code">body</span> selectors</td>
+                    </tr>
+                    <tr>
+                        <td class="code">h1.special</td>
+                        <td>Selects all <span class="code">h1</span> elements with the <span class="code">.special</span> class</td>
+                        <td>This would overwrite the above <span class="code">h1</span> element</td>
+                    </tr>
+                    <tr>
+                        <td class="code">#example</td>
+                        <td>This would select the element with the <span class="code">id="example"</span></td>
+                        <td>This would overwrite all prior selectors. It is intended to only use on one HTML element</td>
+                    </tr>
+                    <tr>
+                        <td class="code">Inline Styles</td>
+                        <td>Applied specifically to an element in HTML</td>
+                        <td>Inline styles always overwrite any styles in external style sheets</td>
+                    </tr>
+                    <tr>
+                        <td class="code">!important</td>
+                        <td>The <span class="code">!important</span> rule is used on a singular style declaration</td>
+                        <td>This overwrites all other declarations, but is generally considered bad practice</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+        <section>
+            <h2>Further Remarks</h2>
+            <p class="addendum">It is best practice to use semantic CSS and have descriptive classes. Use IDs when a uniqe style is necessary
+                for a singular element. Avoid using the <span class="code">!important</span> rule whenever possible, as it can make debugging difficult. 
+                You should also strive to write efficient CSS and avoid unnecessary duplication, using a combination of classes to 
+                achieve the styling desired. 
+            </p>
+        </section>
+        
+    </body>    
+</html>
